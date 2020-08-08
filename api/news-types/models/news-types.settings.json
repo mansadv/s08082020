@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_types",
+  "info": {
+    "name": "newsTypes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "newsType": {
+      "collection": "article",
+      "via": "articleType"
+    },
+    "newsName": {
+      "type": "string"
+    }
+  }
+}

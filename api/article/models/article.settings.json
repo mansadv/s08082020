@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "articleTittle": {
+      "type": "string"
+    },
+    "articleDetails": {
+      "type": "richtext"
+    },
+    "articleisPublished": {
+      "type": "boolean"
+    },
+    "articleType": {
+      "via": "newsType",
+      "model": "news-types"
+    }
+  }
+}
